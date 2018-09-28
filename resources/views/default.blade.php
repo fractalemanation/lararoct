@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="container">
-	<h1>Загрузка файла вариант 1</h1>
-	<!--<form method="post" enctype="multipart/form-data" action="{{route('image.upload')}}">
+	<!--<h1>Загрузка файла вариант 1</h1>
+	<form method="post" enctype="multipart/form-data" action="{{route('image.upload')}}">
 		{{csrf_field()}}
 		<div class="form-group">
 			<input type="file" name="image">
@@ -13,6 +13,7 @@
 	@isset($path)
 	<br><img class="img-responsive" src="{{asset('/storage/'.$path)}}">
 	@endisset-->
+	<h1>Загрузка файла вариант 2</h1>
 	<image-upload></image-upload>
 </div>
 @endsection
